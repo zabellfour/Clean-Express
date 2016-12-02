@@ -1,0 +1,24 @@
+## ignore minification cache - no longer used
+# glob:wp-content/plugins/reef-config/third_party_plugins/bwp-minify/cache/*
+glob:wp-content/cache
+glob:wp-content/cache/*
+glob:umi-replace.php
+## ignore site uploads
+glob:wp-content/uploads
+glob:wp-content/uploads/sites/*
+## ignore cache file
+blog:wp-content/advanced-cache.php
+## ignore various osx garbage files
+glob:.DS_Store
+glob:.DS_Store?
+glob:.Spotlight-V100
+glob:.Trashes
+## and some windows garbage
+glob:Thumbs.db
+glob:.bak
+## the debug log
+glob:wp-content/debug.log
+# sitemaps
+glob:wp-content/uploads/sitemap.xml
+glob:wp-content/uploads/sitemap.xml.gz
+
