@@ -1,0 +1,97 @@
+    .accelerator {
+        padding: 60px 0 0;
+        background-image: url('../images/bg3.jpg');
+        background-size: cover;
+        .img-bg {
+            width: 100%;
+            display: inline-block;
+            @include media('<desktop') {
+                width: 150%;
+                max-width: none !important;
+            }
+            @include media('<tablet') {
+                width: 200%;
+            }
+        }
+        .acc-thumb {
+            padding: 0 15px;
+            display: inline-block;	
+            margin-bottom: 31px;	
+            width: 100%;
+             @include media('<tablet') {
+            		width: 70%;
+            		margin: 0  auto 20px;
+            		display: block;		
+             text-align: center;	
+             }
+              @include media('<phone') {
+             width: 100%;
+              
+              }
+             			
+            			
+            .thumb-top {
+                position: relative;
+                img {
+                    width: 100%;
+                    max-width: none;
+                }
+                .plus-block {
+                    transition: background-size 0.3s;
+                    position: absolute;
+                    top: 20px;
+                    left: 45px;
+                    right: 45px;
+                    bottom: 20px;
+                    background: linear-gradient(to right, rgba(39, 88, 165, 0.78) 0%, rgba(56, 113, 157, 0.78) 50%, rgba(95, 184, 194, 0.78) 100%);
+                    background-repeat: repeat-y;
+                    color: rgba($white, .8);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-size: 0 0;
+                    background-position: 50% 50%;
+                }
+                .plus {
+                    display: inline-block;
+                    font-size: 0px;
+                    transform: rotate(0);
+                    transition: transform 0.5s, font-size 0.5s;
+                    transform-origin: 50% 50%;
+                }
+            }
+            &:hover {
+                .plus {
+                    font-size: 180px;
+                    transform: rotate(1080deg);
+                }
+                .plus-block {
+                    background-size: 100% 100%;
+                }
+                .thumb-bottom {
+                    color: $white;
+                    background-color: $blue;
+                }
+            }
+            .thumb-bottom {
+                transition: background-color 0.3s, color 0.3s;
+                font-weight: 100;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: $white;
+                font-size: 30px;
+                padding: 40px 5px;
+                color: $blue;
+                 @include media('<desktop') {
+                		font-size: 18px;	
+                 
+                 }
+                  @include media('<tablet') {
+                 		padding: 20px 5px;
+                  
+                  }
+                 			
+                			
+            }
+        }
+    }

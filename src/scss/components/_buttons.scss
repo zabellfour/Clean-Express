@@ -1,3 +1,21 @@
 .btn {
-  
+  &.btn-primary{
+    @include animate( background-color, color);
+    font-size: 13px;    
+    text-transform: uppercase;  
+    padding: 12px 38px;
+    display: inline-block;  
+    border:2px solid $white;
+    background-color: $white;
+    color: $blue;
+     @include media('<phone') {
+            width: 100%;
+     
+     }
+                
+    &:hover{
+        background-color: transparent;
+        color: $white;
+    }
+  }
 }

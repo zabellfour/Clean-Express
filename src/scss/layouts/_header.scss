@@ -1,6 +1,6 @@
 #header {
     position: absolute;
-    top: 100px;
+    top: 96px;
     left: 0;
     right: 0;
     @include media('<widescreen') {
@@ -18,7 +18,7 @@
             text-align: center;
         }
         li {
-            padding: 0 7px;
+            padding: 0;
             @include media('<desktop') {
                 padding: 0 3px;
             }
@@ -29,7 +29,7 @@
         a {
             @include animate(color);
             text-transform: uppercase;
-            padding: 5px 20px;
+            padding: 4px 28px;
             display: inline-block;
             border-radius: 20px;
             font-weight: 400;
@@ -53,21 +53,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &:after,&:before{
+        	display: none;
+        }
         @include media('<tablet') {
             display: block;
         }
     }
-    .navbar-brand {
-        display: inline-block;
-        width: 259px;
-        @include media('<desktop') {
-            width: 200px;
-        }
-        img {
-            width: 100%;
-            vertical-align: top;
-        }
-    }
+   
     .navbar-collapse {
         @include media('<tablet') {
             margin-right: -15px;
@@ -78,3 +71,15 @@
         }
     }
 }
+ .navbar-brand {
+        display: inline-block;
+        width: 277px;
+        padding:0;
+        @include media('<desktop') {
+            width: 200px;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }

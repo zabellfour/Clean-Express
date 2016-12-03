@@ -1,3 +1,36 @@
 #footer {
-   
+    background-image: url('../images/bg5.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 80px 0;
+    color: $white;
+    font-size: 14px;
+     @include media('<tablet') {
+    text-align: center;	
+     padding: 25px 0;
+     }
+    			
+    a {
+        color: $white;
+    }
+    .contact-info {
+        @extend %listreset;
+        li {
+            margin-bottom: 3px;
+        }
+    }
+    .navbar-brand {
+        margin-top: 68px;
+        float: none;
+ @include media('<tablet') {
+ 		width: 70%;
+ 		display: block;	
+ 		margin: 0 auto;	
+ 		padding-top: 40px;
+ }
+			
+    }
+    h6 {
+        margin-bottom: 26px;
+    }
 }
