@@ -1,0 +1,92 @@
+.banner-contact {
+	min-height: 544px !important;
+}
+
+.contact-info-block {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background-image: url('../images/bg-6.png');
+    background-position: 87% 0;
+    background-repeat: no-repeat;
+    h6 {
+    	margin-bottom: 3px;
+    }
+}
+
+.contact {
+	h3 {
+		letter-spacing: 4px;
+	}
+	.contact-info {
+		@extend %listreset;
+		margin-bottom: 35px;
+		address, a {
+			color: $light-blue;
+			margin-bottom: 0;
+		}
+
+	}
+	.form-group {
+		@extend %clearfix;
+		position: relative;
+		background-color: $blue;
+		padding: 56px 0;
+	}
+	.form-control {
+		height: auto;
+		padding: 13px 23px;
+		margin-bottom: 26px;
+		font-size: 19px;
+		border: 2px solid $white;
+		border-radius: 0;
+		outline: none;
+		box-shadow: 0px 0px 0px $white;
+		background-color: $blue;
+		transition: box-shadow .5s;
+		&:last-child {
+			margin-bottom: 0;
+			@include media('<tablet') {
+        		margin-bottom: 26px; 
+     		}
+		}
+		&:focus {
+			box-shadow: 0px 0px 10px $white;
+		}
+		@include placeholder {
+			color: $white;
+		}
+	}
+
+	textarea {
+		resize: none;
+		padding: 13px 23px !important;
+		margin-bottom: 0;
+	}
+	.button-area {
+		@extend %clearfix;
+		display: flex;
+		height: 294px;
+		align-items: flex-end;
+			@include media('<tablet') {
+        		height: auto;  
+     		}
+		.btn {
+		padding: 13px 41px;
+		font-size: 19px;
+		border: 2px solid $white;
+		border-radius: 0;
+		outline: none;
+		box-shadow: inset 0 2px 2px rgba(0,0,0,.075);
+		background-color: $blue;
+		color: $white;
+		text-transform: uppercase;
+		transition: all .3s;
+		&:hover {
+				background-color: $light-blue;
+			} 
+		}
+	}
+}
+
+
+
