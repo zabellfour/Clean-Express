@@ -21,5 +21,16 @@
     	max-width: 545px;
     	margin-bottom: 40px;	
     }
+    &.banner-crop{
+        min-height: 545px;
+        .text-holder{
+            padding-top: 70px;
+             @include media('<desktop') {
+                padding-top: 0;
+             
+             }
+                    
+        }
+    }
 }
 

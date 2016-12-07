@@ -35,6 +35,11 @@ h3,
     color: $blue;
     text-transform: uppercase;
     font-family: $font-family-sans-serif;
+     @include media('<tablet') {
+    	font-size: 22px;
+     
+     }
+    		
 }
 
 h4,
@@ -42,16 +47,16 @@ h4,
 
 h5,
 .h5 {
-	letter-spacing: 2px;
-	margin: 0 0 2px;
-	line-height: 1;	
+    letter-spacing: 2px;
+    margin: 0 0 2px;
+    line-height: 1;
 }
 
 h6,
 .h6 {
-	line-height: 1;	
-	letter-spacing: 2px;
-		margin: 0 0 15px;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
 }
 
 .thin {
@@ -64,4 +69,24 @@ h6,
 
 .wrap {
     display: block;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.blue {
+    color: #007dc3;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+.fz18 {
+    font-size: 18px;
+}
+
+.fz22 {
+    font-size: 22px;
 }
