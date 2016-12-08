@@ -41,7 +41,7 @@
         width: 50%;
         max-width: 555px;
         padding: 62px 15px 34px;
-        h3 {
+        .h3 {
             margin-bottom: 10px;
             letter-spacing: 3px;
         }
@@ -99,7 +99,7 @@
     .text-side-lg {
         position: relative;
         padding: 72px 15px 67px 32px;
-        h3 {
+        .h3 {
             margin-bottom: 29px;
             @include media('<tablet') {
                 margin-bottom: 15px;
