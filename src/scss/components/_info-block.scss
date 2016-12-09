@@ -22,41 +22,59 @@
   }
   .row {
     margin-bottom: 60px;
-    @media screen and (max-width: 992px) {
-          margin-bottom: 30px;
+    @media screen and (max-width: 991px) {
+          margin-bottom: 20px;
         }
     &:last-child {
       margin-bottom: 165px;
-       @media screen and (max-width: 992px) {
-          margin-bottom: 15px;
+       @media screen and (max-width: 991px) {
+          margin-bottom: 20px;
         }
     }
   }
   h2 {
     text-transform: uppercase;
     color: $blue;
-    font-size: 36px;
     letter-spacing: 3px;
     margin-bottom: 40px;
-
+          @include media('<tablet') {
+          margin-bottom: 15px;
+        }
   }
   h3 {
     font-size: 32px;
     text-transform: capitalize;
     margin-bottom: 10px;
+    @include media('<tablet') {
+          font-size: 20px;
+        }
   }
   h4 {
     margin-bottom: 5px;
+    @include media('<tablet') {
+          font-size: 18px;
+        }
   }
   .text-section {
     margin-bottom: 60px;
+      @include media('<tablet') {
+        margin-bottom: 15px;
+    }
   }
   .left-side-text{
     padding: 45px 60px 0 0;
+    @include media('<tablet') {
+          padding: 25px 25px 0 0;
+        }
+    .service-list {
+      @include media('<tablet') {
+          margin-bottom: 15px;
+        }
+    }
   }
   .right-side-text {
     padding-left: 85px;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           padding-left: 0;
           margin-top: 30px;
         }
@@ -66,7 +84,7 @@
     .service-list {
       margin: 0;
       margin-bottom: 25px;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           margin-bottom: 15px;
         }
     }
@@ -96,7 +114,7 @@
     height: 100%;
     background-size: cover;
     background-position: 50% 50%;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       width: 100%;
       height: 0;
       padding-bottom: 50%;

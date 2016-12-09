@@ -10,8 +10,9 @@
 }
 
 .contact {
-	h3 {
+	h2 {
 		letter-spacing: 4px;
+		font-weight: 700;
 	}
 	.contact-info {
 		@extend %listreset;
@@ -27,6 +28,9 @@
 		position: relative;
 		background-color: $blue;
 		padding: 56px 0;
+		@include media('<tablet') {
+        		padding: 26px 0;
+     		}
 	}
 	.form-control {
 		height: auto;
@@ -39,10 +43,18 @@
 		box-shadow: 0px 0px 0px $white;
 		background-color: $blue;
 		transition: box-shadow .5s;
+		@include media('<tablet') {
+        		font-size: 16px;
+        		padding: 9px 16px;
+        		margin-bottom: 15px
+     		}
 		&:last-child {
 			margin-bottom: 0;
-			@include media('<tablet') {
+			@include media('<desktop') {
         		margin-bottom: 26px; 
+     		}
+     		@include media('<tablet') {
+        		margin-bottom: 15px
      		}
 		}
 		&:focus {
@@ -63,9 +75,9 @@
 		display: flex;
 		height: 294px;
 		align-items: flex-end;
-			@include media('<tablet') {
-        		height: auto;  
-     		}
+			@media screen and (max-width: 991px) {
+          		height: auto;
+        	}
 		.btn {
 		padding: 13px 41px;
 		font-size: 19px;
@@ -77,6 +89,10 @@
 		color: $white;
 		text-transform: uppercase;
 		transition: all .3s;
+		@include media('<tablet') {
+        		font-size: 16px;
+        		padding: 9px 23px;
+     		}
 		&:hover {
 				background-color: $light-blue;
 			} 
