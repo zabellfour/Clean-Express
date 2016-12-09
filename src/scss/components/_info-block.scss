@@ -1,0 +1,106 @@
+.info-block {
+  position: relative;
+  background-image: url('../images/bg7.png'), url('../images/bg7.png');
+  background-position: 0 0, 0 110%;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 32%;
+    left: 85%;
+    width: 374px;
+    height: 692px;
+    transform: rotate(180deg);
+    background-image: url('../images/bg7.png');
+    background-position: 100% auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+      @include media('<desktop') {
+          left: 70%;
+        }
+  }
+  .row {
+    margin-bottom: 60px;
+    @media screen and (max-width: 992px) {
+          margin-bottom: 30px;
+        }
+    &:last-child {
+      margin-bottom: 165px;
+       @media screen and (max-width: 992px) {
+          margin-bottom: 15px;
+        }
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+    color: $blue;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+
+  }
+  h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  h4 {
+    margin-bottom: 5px;
+  }
+  .text-section {
+    margin-bottom: 60px;
+  }
+  .left-side-text{
+    padding: 45px 60px 0 0;
+  }
+  .right-side-text {
+    padding-left: 85px;
+        @media screen and (max-width: 992px) {
+          padding-left: 0;
+          margin-top: 30px;
+        }
+    h3 {
+      margin-bottom: 15px;
+    }
+    .service-list {
+      margin: 0;
+      margin-bottom: 25px;
+        @media screen and (max-width: 992px) {
+          margin-bottom: 15px;
+        }
+    }
+  }
+  .service-list {
+    margin-top: 15px;
+    padding-left: 17px;
+    li {
+      position: relative;
+      list-style-type: none;
+      margin-bottom: 3px;
+      &:before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../images/triangle.svg);
+        width: 9px;
+        height: 9px;
+        margin-left: -17px;
+      }
+    }
+  }
+  .info-img-box {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      height: 0;
+      padding-bottom: 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}

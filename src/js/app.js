@@ -8,3 +8,8 @@ import HP from './modules/helpers';
     });
 
 }(jQuery));
+
+
+$(function() {
+    $('.same-height').matchHeight();
+});
